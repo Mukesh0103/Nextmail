@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NextMail</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="app-header ta-center">
+            <figure>
+                <a href="javascript:void(0)" class="app-logo"><img src="./images/logo.png" alt="app-logo"></a>
+            </figure>
+        </header>
+        <div class="app-inner-body clearfix">
+            <aside class="f-left app-menus">
+                <button class="btn btn-primary">
+                    <svg class="btn-icon icon">
+                        <use href="./images/svg.svg#compose" />
+                    </svg>Compose</button>
+                <div class="menu-categories scrollbar">
+                    <h2 class="heading-2 menu-categories__head">MAILBOX</h2>
+                    <ul class="menu-list" onclick="activeClass(event)">
+                        <li class="text-secondary menu-categories__list fw-6 active"><a href="javascript:void(0)">
+                                <figure class="menu-icon">
+                                    <svg class="icon">
+                                        <use href="./images/svg.svg#inbox" />
+                                    </svg>
+                                </figure>Inbox (200)
+                            </a>
+                        </li>
+                        <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
+                                <figure class="menu-icon">
+                                    <svg class="icon">
+                                        <use href="./images/svg.svg#sent" />
+                                    </svg>
+                                </figure>Sent Mail
+                            </a>
+                        </li>
+                        <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
+                                <figure class="menu-icon">
+                                    <svg class="icon">
+                                        <use href="./images/svg.svg#draft" />
+                                    </svg>
+                                </figure>Drafts
+                            </a>
+                        </li>
+                        <div class="remaining-menus" id="hidden-menus">
+                            <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
+                                    <figure class="menu-icon">
+                                        <svg class="icon">
+                                            <use href="./images/svg.svg#trash" />
+                                        </svg>
+                                    </figure>Trash (2)
+                                </a>
+                            </li>
+                            <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
+                                    <figure class="menu-icon">
+                                        <svg class="icon">
+                                            <use href="./images/svg.svg#attachments" />
+                                        </svg>
+                                    </figure>Attachments
+                                </a>
+                            </li>
+                        </div>
+                        <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)"
+                                id="more-btn">
+                                <figure class="menu-icon">
+                                    <svg class="icon">
+                                        <use href="./images/svg.svg#more" />
+                                    </svg>
+                                </figure>More…
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu-categories scrollbar">
+                    <h2 class="heading-2 menu-categories__head">LISTS</h2>
+                    <ul class="menu-list" onclick="activeClass(event)">
+                        <li class="text-secondary fw-6 menu-categories__list">
+                            <a href="javascript:void(0)">Linkedn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-categories scrollbar">
+                    <h2 class="heading-2 menu-categories__head">LABELS</h2>
+                    <ul class="menu-list" onclick="activeClass(event)">
+                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
+                            <a href="javascript:void(0)">Personal (2)</a>
+                        </li>
+                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
+                            <a href="javascript:void(0)">Clients</a>
+                        </li>
+                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
+                            <a href="javascript:void(0)">Work (2)</a>
+                        </li>
+                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
+                            <a href="javascript:void(0)">Friends</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app-user-details">
+                    <figure class="user-info mr-6">
+                        <img src="./images/profile.png" class="user-image">
+                    </figure>
+                    <article class="user-info">
+                        <p class="text-primary user-name">Christian Bale</p>
+                        <span class="text-small user-email">christian.bale@gmaiil.com</span>
+                    </article>
+                </div>
+            </aside>
+            <article class="f-left app-mails">
+                <div class="mail-searchbox">
+                    <svg class="icon search-icon">
+                        <use href="./images/svg.svg#search" />
+                    </svg>
+                    <input type="text" class="mail-searchfield" placeholder="Search">
+                </div>
+                <div class="mail-list-heading clearfix">
+                    <h1 class="heading-1 fw-n f-left">Inbox</h1>
+                    <p class="text-secondary mail-sort-dropdown">Sort by:
+                        <a href="javascript:void(0)">Unread <svg class="icon down-icon">
+                                <use href="./images/svg.svg#down" />
+                            </svg></a></p>
+                </div>
+                <div class="inbox-mails scrollbar">
+                    <ul>
+                        <li class="mail-list clearfix unopened-mails" id="">
+                            <h2 class="heading-2 f-left">Design Language</h2>
+                            <span class="text-medium mail-date">08.00 PM</span>
+                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        </li>
+                        <li class="mail-list clearfix opened-mails">
+                            <h2 class="heading-2 f-left">Nextmail New Look</h2>
+                            <span class="text-medium mail-date">11:00 AM</span>
+                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        </li>
+                        <li class="mail-list clearfix">
+                            <h2 class="heading-2 f-left">Interview with Shopify</h2>
+                            <span class="text-medium mail-date">12.05 PM</span>
+                            <p class="recipient-name text-medium fw-6">Aisha Dialo</p>
+                        </li>
+                        <li class="mail-list clearfix">
+                            <h2 class="heading-2 f-left">Narcos Season 2</h2>
+                            <span class="text-medium mail-date">07:35 PM</span>
+                            <p class="recipient-name text-medium fw-6">Netflix</p>
+                        </li>
+                        <li class="mail-list clearfix">
+                            <h2 class="heading-2 f-left">Top Stories of the Day</h2>
+                            <span class="text-medium mail-date">Yesterday</span>
+                            <p class="recipient-name text-medium fw-6">TechCrunch</p>
+                        </li>
+                        <li class="mail-list clearfix">
+                            <h2 class="heading-2 f-left">Updates from Kevin</h2>
+                            <span class="text-medium mail-date">Yesterday</span>
+                            <p class="recipient-name text-medium fw-6">Goodreads</p>
+                        </li>
+                        <li class="mail-list clearfix">
+                            <h2 class="heading-2 f-left">Startup 2016</h2>
+                            <span class="text-medium mail-date">09 Oct, 16</span>
+                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        </li>
+                        <li class="mail-list clearfix">
+                            <h2 class="heading-2 f-left">Design Language</h2>
+                            <span class="text-medium mail-date">05 Oct, 16</span>
+                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        </li>
+                        <li class="mail-list clearfix">
+                            <h2 class="heading-2 f-left">Nextmail New Look</h2>
+                            <span class="text-medium mail-date">04 Oct, 16</span>
+                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <section class="f-left app-convo">
+
+            </section>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
