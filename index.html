@@ -18,100 +18,107 @@
             </figure>
         </header>
         <div class="app-inner-body clearfix">
-            <aside class="f-left app-menus">
+            <aside class="f-left app-sidebar">
                 <button class="btn btn-primary">
                     <svg class="btn-icon icon">
                         <use href="./images/svg.svg#compose" />
                     </svg>Compose</button>
-                <div class="menu-categories scrollbar">
-                    <h2 class="heading-2 menu-categories__head">MAILBOX</h2>
-                    <ul class="menu-list" onclick="activeClass(event)">
-                        <li class="text-secondary menu-categories__list fw-6 active"><a href="javascript:void(0)">
-                                <figure class="menu-icon">
-                                    <svg class="icon">
-                                        <use href="./images/svg.svg#inbox" />
-                                    </svg>
-                                </figure>Inbox (200)
-                            </a>
-                        </li>
-                        <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
-                                <figure class="menu-icon">
-                                    <svg class="icon">
-                                        <use href="./images/svg.svg#sent" />
-                                    </svg>
-                                </figure>Sent Mail
-                            </a>
-                        </li>
-                        <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
-                                <figure class="menu-icon">
-                                    <svg class="icon">
-                                        <use href="./images/svg.svg#draft" />
-                                    </svg>
-                                </figure>Drafts
-                            </a>
-                        </li>
-                        <div class="remaining-menus" id="hidden-menus">
-                            <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
+                <div>
+                    <div class="menu-categories">
+                        <h3 class="heading-3 menu-categories__head">MAILBOX</h3>
+                        <ul class="menu-list mailbox-menu scrollbar" onclick="activeClass(event)">
+                            <li class="text-secondary menu-categories__list overflow-text fw-6 active"><a
+                                    href="javascript:void(0)">
                                     <figure class="menu-icon">
                                         <svg class="icon">
-                                            <use href="./images/svg.svg#trash" />
+                                            <use href="./images/svg.svg#inbox" />
                                         </svg>
-                                    </figure>Trash (2)
+                                    </figure>Inbox (200)
                                 </a>
                             </li>
-                            <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)">
+                            <li class="text-secondary menu-categories__list overflow-text fw-6"><a
+                                    href="javascript:void(0)">
                                     <figure class="menu-icon">
                                         <svg class="icon">
-                                            <use href="./images/svg.svg#attachments" />
+                                            <use href="./images/svg.svg#sent" />
                                         </svg>
-                                    </figure>Attachments
+                                    </figure>Sent Mail
                                 </a>
                             </li>
-                        </div>
-                        <li class="text-secondary menu-categories__list fw-6"><a href="javascript:void(0)"
-                                id="more-btn">
-                                <figure class="menu-icon">
-                                    <svg class="icon">
-                                        <use href="./images/svg.svg#more" />
-                                    </svg>
-                                </figure>More…
-                            </a>
-                        </li>
+                            <li class="text-secondary menu-categories__list overflow-text fw-6"><a
+                                    href="javascript:void(0)">
+                                    <figure class="menu-icon">
+                                        <svg class="icon">
+                                            <use href="./images/svg.svg#draft" />
+                                        </svg>
+                                    </figure>Drafts
+                                </a>
+                            </li>
+                            <div class="remaining-menus" id="hidden-menus">
+                                <li class="text-secondary menu-categories__list overflow-text fw-6"><a
+                                        href="javascript:void(0)">
+                                        <figure class="menu-icon">
+                                            <svg class="icon">
+                                                <use href="./images/svg.svg#trash" />
+                                            </svg>
+                                        </figure>Trash (2)
+                                    </a>
+                                </li>
+                                <li class="text-secondary menu-categories__list fw-6 overflow-text"><a
+                                        href="javascript:void(0)">
+                                        <figure class="menu-icon">
+                                            <svg class="icon">
+                                                <use href="./images/svg.svg#attachments" />
+                                            </svg>
+                                        </figure>Attachments
+                                    </a>
+                                </li>
+                            </div>
+                            <li class="text-secondary menu-categories__list fw-6 overflow-text"><a
+                                    href="javascript:void(0)" id="more-btn">
+                                    <figure class="menu-icon">
+                                        <svg class="icon">
+                                            <use href="./images/svg.svg#more" />
+                                        </svg>
+                                    </figure>More…
+                                </a>
+                            </li>
 
-                    </ul>
-                </div>
-                <div class="menu-categories scrollbar">
-                    <h2 class="heading-2 menu-categories__head">LISTS</h2>
-                    <ul class="menu-list" onclick="activeClass(event)">
-                        <li class="text-secondary fw-6 menu-categories__list">
-                            <a href="javascript:void(0)">Linkedn</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-categories scrollbar">
-                    <h2 class="heading-2 menu-categories__head">LABELS</h2>
-                    <ul class="menu-list" onclick="activeClass(event)">
-                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
-                            <a href="javascript:void(0)">Personal (2)</a>
-                        </li>
-                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
-                            <a href="javascript:void(0)">Clients</a>
-                        </li>
-                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
-                            <a href="javascript:void(0)">Work (2)</a>
-                        </li>
-                        <li class="text-secondary fw-6 menu-list__labels menu-categories__list">
-                            <a href="javascript:void(0)">Friends</a>
-                        </li>
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="menu-categories">
+                        <h3 class="heading-3 menu-categories__head">LISTS</h3>
+                        <ul class="menu-list lists-menu scrollbar" onclick="activeClass(event)">
+                            <li class="text-secondary fw-6 menu-categories__list overflow-text">
+                                <a href="javascript:void(0)">Linkedn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-categories">
+                        <h3 class="heading-3 menu-categories__head">LABELS</h3>
+                        <ul class="menu-list labels-menu scrollbar" onclick="activeClass(event)">
+                            <li class="text-secondary fw-6 menu-list__labels menu-categories__list overflow-text">
+                                <a href="javascript:void(0)">Personal (2)</a>
+                            </li>
+                            <li class="text-secondary fw-6 menu-list__labels menu-categories__list overflow-text">
+                                <a href="javascript:void(0)">Clients</a>
+                            </li>
+                            <li class="text-secondary fw-6 menu-list__labels menu-categories__list overflow-text">
+                                <a href="javascript:void(0)">Work (2)</a>
+                            </li>
+                            <li class="text-secondary fw-6 menu-list__labels menu-categories__list overflow-text">
+                                <a href="javascript:void(0)">Friends</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="app-user-details">
                     <figure class="user-info mr-6">
                         <img src="./images/profile.png" class="user-image">
                     </figure>
                     <article class="user-info">
-                        <p class="text-primary user-name">Christian Bale</p>
-                        <span class="text-small user-email">christian.bale@gmaiil.com</span>
+                        <p class="text-primary overflow-text">Christian Bale</p>
+                        <span class="text-small overflow-text user-email">christian.bale@gmaiil.com</span>
                     </article>
                 </div>
             </aside>
@@ -122,65 +129,162 @@
                     </svg>
                     <input type="text" class="mail-searchfield" placeholder="Search">
                 </div>
-                <div class="mail-list-heading clearfix">
-                    <h1 class="heading-1 fw-n f-left">Inbox</h1>
+                <div class="mail-list-header">
+                    <h1 class="heading-1 fw-n mail-list-heading overflow-text">Inbox</h1>
                     <p class="text-secondary mail-sort-dropdown">Sort by:
-                        <a href="javascript:void(0)">Unread <svg class="icon down-icon">
+                        <button class="mail-sort-btn" onclick="openSortDropdown()">Unread <svg class="icon down-icon">
                                 <use href="./images/svg.svg#down" />
-                            </svg></a></p>
+                            </svg></button></p>
+                    <div class="sort-dropdown" id="sortDropdown">
+                        <ul>
+                            <li class="sort-dropdown__list">Read</li>
+                            <li class="sort-dropdown__list">Unread</li>
+                            <li class="sort-dropdown__list">All</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="inbox-mails scrollbar">
                     <ul>
-                        <li class="mail-list clearfix unopened-mails" id="">
-                            <h2 class="heading-2 f-left">Design Language</h2>
-                            <span class="text-medium mail-date">08.00 PM</span>
-                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text unread-mail">Design Language</h3>
+                            <span class="text-medium mail-list__timestamp">08.00 PM</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Salman Shah</p>
                         </li>
-                        <li class="mail-list clearfix opened-mails">
-                            <h2 class="heading-2 f-left">Nextmail New Look</h2>
-                            <span class="text-medium mail-date">11:00 AM</span>
-                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        <li class="mail-list active-mail">
+                            <h3 class="heading-3 mail-subject overflow-text">Nextmail New Look</h3>
+                            <span class="text-medium mail-list__timestamp">11:00 AM</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Salman Shah</p>
+                            <span class="mail-list__attachment"><svg class="icon attachment-icon">
+                                    <use href="./images/svg.svg#attachment" /></svg></span>
                         </li>
-                        <li class="mail-list clearfix">
-                            <h2 class="heading-2 f-left">Interview with Shopify</h2>
-                            <span class="text-medium mail-date">12.05 PM</span>
-                            <p class="recipient-name text-medium fw-6">Aisha Dialo</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text">Interview with Shopify</h3>
+                            <span class="text-medium mail-list__timestamp">12.05 PM</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Aisha Dialo</p>
                         </li>
-                        <li class="mail-list clearfix">
-                            <h2 class="heading-2 f-left">Narcos Season 2</h2>
-                            <span class="text-medium mail-date">07:35 PM</span>
-                            <p class="recipient-name text-medium fw-6">Netflix</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text">Narcos Season 2</h3>
+                            <span class="text-medium mail-list__timestamp">07:35 PM</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Netflix</p>
                         </li>
-                        <li class="mail-list clearfix">
-                            <h2 class="heading-2 f-left">Top Stories of the Day</h2>
-                            <span class="text-medium mail-date">Yesterday</span>
-                            <p class="recipient-name text-medium fw-6">TechCrunch</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text">Top Stories of the Day</h3>
+                            <span class="text-medium mail-list__timestamp">Yesterday</span>
+                            <p class="mail-content text-medium overflow-text fw-6">TechCrunch</p>
                         </li>
-                        <li class="mail-list clearfix">
-                            <h2 class="heading-2 f-left">Updates from Kevin</h2>
-                            <span class="text-medium mail-date">Yesterday</span>
-                            <p class="recipient-name text-medium fw-6">Goodreads</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text">Updates from Kevin</h3>
+                            <span class="text-medium mail-list__timestamp">Yesterday</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Goodreads</p>
                         </li>
-                        <li class="mail-list clearfix">
-                            <h2 class="heading-2 f-left">Startup 2016</h2>
-                            <span class="text-medium mail-date">09 Oct, 16</span>
-                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text">Startup 2016</h3>
+                            <span class="text-medium mail-list__timestamp">09 Oct, 16</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Salman Shah</p>
                         </li>
-                        <li class="mail-list clearfix">
-                            <h2 class="heading-2 f-left">Design Language</h2>
-                            <span class="text-medium mail-date">05 Oct, 16</span>
-                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text">Design Language</h3>
+                            <span class="text-medium mail-list__timestamp">05 Oct, 16</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Salman Shah</p>
                         </li>
-                        <li class="mail-list clearfix">
-                            <h2 class="heading-2 f-left">Nextmail New Look</h2>
-                            <span class="text-medium mail-date">04 Oct, 16</span>
-                            <p class="recipient-name text-medium fw-6">Salman Shah</p>
+                        <li class="mail-list">
+                            <h3 class="heading-3 mail-subject overflow-text">Nextmail New Look</h3>
+                            <span class="text-medium mail-list__timestamp">04 Oct, 16</span>
+                            <p class="mail-content text-medium overflow-text fw-6">Salman Shah</p>
                         </li>
                     </ul>
                 </div>
             </article>
-            <section class="f-left app-convo">
-
+            <section class="f-left mail-details">
+                <ul class="mail-actions">
+                    <li class="action-btn__list">
+                        <button class="action-btn btn">
+                            <svg class="icon envelope-icon">
+                                <use href="./images/svg.svg#envelope" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="action-btn__list">
+                        <button class="action-btn btn">
+                            <svg class="icon">
+                                <use href="./images/svg.svg#exit" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="action-btn__list">
+                        <button class="action-btn btn">
+                            <svg class="icon alarm-icon">
+                                <use href="./images/svg.svg#alarm" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="action-btn__list">
+                        <button class="action-btn btn">
+                            <svg class="icon group-icon">
+                                <use href="./images/svg.svg#group" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="action-btn__list">
+                        <button class="action-btn btn">
+                            <svg class="icon">
+                                <use href="./images/svg.svg#tag" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="action-btn__list">
+                        <button class="action-btn btn">
+                            <svg class="icon trash-icon">
+                                <use href="./images/svg.svg#trash" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+                <div class="mail-description">
+                    <h1 class="heading-1 fw-3 mail-description__head">Nextmail New Look</h1>
+                    <div class="mail-description__user">
+                        <figure class="user-info user-info__figure">
+                            <img src="./images/profile.png" class="user-image user-image__big">
+                        </figure>
+                        <article class="user-info__article">
+                            <p class="overflow-text heading-2 user-name pl-10">Christian Bale</p>
+                            <span class="text-secondary mail-details__timestamp">11:00 AM,
+                                Today</span>
+                            <p class="overflow-text text-medium fw-6 pl-10"><span class="text-primary text-medium">From:
+                                </span>christian.bale@gmail.com</p>
+                        </article>
+                    </div>
+                    <div class="mail-description__body scrollbar">
+                        <div class="mail-description__content">
+                            <p class="text-primary mail-message">Hello Ben Affleck,</p>
+                            <p class="text-primary mail-message">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation <span>ullamco</span> laboris nisi ut aliquip ex ea <span>commodo</span>
+                                consequat.</p>
+                            <p class="text-primary mail-message">Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                            <p class="text-primary mail-message">Cheers</p>
+                        </div>
+                        <ul class="mail-attachments">
+                            <li class="mail-attachments__file overflow-text">
+                                <img src="./images/pdf.svg" class="mail-attachments__img">
+                                <span class="text-small mail-attachments__name">Sample.pdf</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mail-description__footer">
+                        <button class="btn btn-primary reply-btn">
+                            <svg class="btn-icon reply-icon icon">
+                                <use href="./images/svg.svg#reply" />
+                            </svg>Reply</button>
+                        <button class="btn forward-btn">
+                            <svg class="btn-icon forward-icon icon">
+                                <use href="./images/svg.svg#reply" />
+                            </svg>Forward</button>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
